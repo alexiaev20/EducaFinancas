@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'pagina/css/pag.css' %}">
+    <link rel="shortcut icon" href="../../static/pagina/images/paginaInicial/icons/logo.svg" type="image/x-icon">
+    <title>Educa Finanças - Direito do Consumidor</title>
+</head>
+<body>
+
+    <!-- Seção da Barra de Navegação -->
+    <section class="nav">
+
+        <!-- Container da Logo e Nome do Projeto -->
+        <div class="logo">
+            <img src="{% static 'pagina/images/paginaInicial/icons/logo.svg' %}" alt="Logo">
+            <h1>Educa Finanças</h1>
+        </div>
+
+        <!-- Container dos Links do Site -->
+        <div class="links-nav">
+
+            <!-- Links do Site -->
+            <ul>
+                <li><a href="{% url 'index' %}">Início</a></li>
+            </ul>
+
+            <!-- Verifica se o usuário está autenticado -->
+            {% if user %}
+            <!-- Ícone de perfil do usuário -->
+            <div class="action-icon">
+                <div class="btn-perfil">
+                    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0977 10.5C14.3068 10.5 16.0977 8.70914 16.0977 6.5C16.0977 4.29086 14.3068 2.5 12.0977 2.5C9.88852 2.5 8.09766 4.29086 8.09766 6.5C8.09766 8.70914 9.88852 10.5 12.0977 10.5Z" fill="white"/>
+                        <path d="M20.0977 18C20.0977 20.485 20.0977 22.5 12.0977 22.5C4.09766 22.5 4.09766 20.485 4.09766 18C4.09766 15.515 7.67966 13.5 12.0977 13.5C16.5157 13.5 20.0977 15.515 20.0977 18Z" fill="white"/>
+                    </svg>
+
+                    <!-- Pop-up de Perfil -->
+                    <div class="popup-perfil">
+                        <div class="popup-perfil-conteudo">
+                            <ul class="popup-menu">
+                                <li>
+                                    <div class="popup-icons"><i data-lucide="wallet"></i></div>
+                                    <a href="{% url 'dashboard' %}" class="group-link">Minha Carteira</a>
+                                </li>
+                                <li>
+                                    <div class="popup-icons"><i data-lucide="log-out"></i></div>
+                                    <a href="#" class="group-link">Sair</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% else %}
+            <a href="{% url 'cadastro' %}"><button type="button">Entrar</button></a>
+            {% endif %}
+
+        </div>
+    
+    </section>
+
+    <section class="container">
+        <div class="img-header"><img src="{% static 'pagina/images/paginaInicial/Card-Imagem-1.png' %}" alt="Imagem"></div>
+
+        <h1>Direito do Consumidor</h1>
+
+        <div class="conteudo">
+            <p>É muito recorrente nos depararmos com diversas ofertas de produtos e serviços oferecidos de forma online. O comércio feito por meio da internet oferece muita comodidade e facilidade para os clientes, uma vez que não é necessário pegar filas enormes e ir ao centro da cidade, além de conseguir oferecer preços mais baratos.
+
+                Nesse sentido, é válido mencionar que os consumidores apresentam alguns direitos, mesmo que as compras sejam feitas de forma digitalmente. Isso garante que façam boas aquisições e não tenham maiores dores de cabeça, uma vez que a lei estabelece diversas obrigações para o e-commerce e garantias para os clientes.
+                
+                Por isso, para te ajudar a entender quais são os direitos do seu consumidor online, continue a leitura do nosso artigo!</p>
+                
+                <h2>O que são os direitos do consumidor?</h2>
+                <p>Os direitos dos consumidores são um conjunto de princípios jurídicos associados às relações de consumo existentes entre o cliente e a empresa prestadora de serviços ou de vendas. Sua principal finalidade é melhorar relações comerciais que, normalmente, não ocorrem de forma equilibrada — considerando que a organização apresenta um poder econômico mais elevado que o consumidor.
+                
+                Para que os direitos do consumidor sejam garantidos de forma eficiente, existe um regramento particular, ou seja, o Código de Defesa do Consumidor (CDC). A partir dessa legislação, ambos os lados têm seus direitos reconhecidos e protegidos.</p>
+                
+                <h2>Qual a importância dos direitos do consumidor nas compras online?</h2>
+                <p>
+                    Os direitos dos consumidores são fundamentais e devem ser cumpridos tanto em compras pela internet quanto nas presenciais. Eles servem para proteger as transações realizadas de forma digital e para garantir que os produtos cheguem nas condições anunciadas pela loja.
+                    
+                    Com o avanço do comércio eletrônico, foram inseridas algumas normas no Código de Defesa do Consumidor para que as empresas de comércio eletrônico cumpram com suas obrigações.
+                    
+                    Saiba que a maioria das regras funcionam tanto para estabelecimentos físicos quanto para virtuais, porém, o meio online apresenta algumas particularidades. Isso porque a compra acontece à distância e o pagamento é feito de forma digital.
+                    
+                    O direito do consumidor é essencial para evitar maiores reclamações relacionadas à compra pela internet, que ainda são muito comuns, mesmo após o aumento dessa atividade, em especial, durante o auge da pandemia.
+                </p>
+                
+                <h2>Por que você precisa conhecer esses direitos?</h2>
+                <p>
+                    É essencial conhecer os direitos dos consumidores para evitar possíveis contratempos e abusos. Assim, sua empresa fica ciente das atividades que precisam ser realizadas para conseguir se destacar no mercado.
+                    
+                    Com domínio sobre o CDC, você garante mais tranquilidade para os potenciais clientes, uma vez que eles precisam se sentir seguros ao realizar qualquer aquisição. O e-commerce está se desenvolvendo significativamente, logo, é preciso que a loja trabalhe conforme as necessidades do mercado para que problemas não ocorram durante as vendas.
+                </p>
+                
+                <h2>Como funciona a relação de consumo?</h2>
+                <p>A relação de consumo é formada pelo consumidor, ou seja, aquele que compra um serviço ou produto, e o fornecedor que é aquele que vende. O CDC estabelece regras específicas para assegurar uma relação eficiente entre o cliente e a empresa.
+                
+                Sendo assim, os estabelecimentos comerciais devem ter um exemplar do código para que os direitos dos consumidores possam ser consultados, tanto por clientes quanto pelos profissionais no atendimento.
+                
+                Saiba que o CDC apresenta como um dos princípios básicos a vulnerabilidade do cliente. Isso quer dizer que, na relação consumerista, o consumidor é visto como a parte mais frágil e, consequentemente, precisa ter seus direitos protegidos.
+                
+                Além disso, essa vulnerabilidade pode ser aplicada às empresas, se elas forem as destinatárias finais dos produtos ou serviços. A certificação dessa condição pode acontecer de três formas distintas: técnica, jurídica ou econômica.
+                
+                A vulnerabilidade técnica se fundamenta na ideia central de que o consumidor não apresenta conhecimento específico a respeito do produto que está adquirindo. Assim, ele pode ser facilmente enganado e comprar algo que não atende a suas expectativas.
+                
+                A jurídica diz respeito à falta de conhecimento no campo legal, de forma que o cliente não terá os mesmos mecanismos e profissionais que aquele que comercializa o serviço ou produto. Já a fragilidade econômica aborda a ideia de que o consumidor não está na mesma posição financeira que o fornecedor. Assim, ele não apresenta os mesmos recursos que uma grande empresa.</p>
+        </div>
+    </section>
+
+    <!-- Seção do Footer -->
+    <section class="footer">
+
+        <!-- Container do Footer -->
+        <div class="container-footer">
+
+            <!-- Container da Logo e Nome do Projeto -->
+            <div class="logo">
+                <img src="{% static 'pagina/images/paginaInicial/icons/logo.svg' %}" alt="Logo">
+                <h1>Educa Finanças</h1>
+            </div>
+
+            <!-- Container das Redes Sociais -->
+            <div class="social-media">
+                <a href="https://github.com/projetoFinancas"><img src="{% static 'pagina/images/paginaInicial/icons/github.svg' %}" alt="GitHub"></a>
+            </div>
+
+        </div>
+
+        <!-- Container do Sitemap e Direitos Autorais -->
+        <div class="container-links">
+
+        <!-- Sitemap - Links do Site -->
+        <ul>
+            <li><a href="#dashboard">DashBoard</a></li>
+            <li><a href="#chat">ChatBot</a></li>
+            <li><a href="#conteudos">Conteúdos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+
+        <!-- Direitos Autorais -->
+        <p>&copy; 2024 Educa Finanças - Todos os Direitos Reservados</p>
+
+        </div>
+
+    </section>
+    
+       <!-- Pegar o link do script da pagina lucide -->
+       <script src="https://unpkg.com/lucide@latest"></script>
+       <script src="../../static/pagina/js/pg.js"></script>
+</body>
+</html>
