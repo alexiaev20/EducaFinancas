@@ -24,4 +24,4 @@ O site do projeto está disponível online. Você pode acessá-lo diretamente em
 
 ## Contato
 
-Se você tiver dúvidas ou sugestões, entre em contato pelo meu [GitHub](www.linkedin.com/in/alexia-evelyn).
+Se você tiver dúvidas ou sugestões, entre em contato pelo meu [linkedin](www.linkedin.com/in/alexia-evelyn).
