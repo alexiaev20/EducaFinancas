@@ -16,7 +16,7 @@
 - Exibição do **saldo** atual e **histórico** de transações.
 - Utilização de **SQLite** como banco de dados para armazenamento local dos dados.
 
-## Como usar
+## Demonstração
 
 O site do projeto está disponível online. Você pode acessá-lo diretamente em:  
 [**EducaFinancas**](https://x4d-adaptable-hubble.circumeo-apps.net/)
